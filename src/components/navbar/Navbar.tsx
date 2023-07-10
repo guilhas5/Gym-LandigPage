@@ -17,11 +17,14 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const navbarBg = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+  const modalStyles = {
+    transition: "transform 0.3s ease-in-out",
+    transform: isMenuToggled ? "translateX(0)" : "translateX(100%)",
+  };
+
   return (
     <nav>
-      <div
-        className={`${navbarBg} ${flexBetween} fixed top-0 z-30 w-full py-6`}
-      >
+      <div className={`${navbarBg} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16 `}>
             {/*Left Side*/}
@@ -71,8 +74,11 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         </div>
       </div>
       {/*MOBILE MENU MODAL */}
-      {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+      {!isAboveMediumScreens && (
+        <div
+          className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl"
+          style={modalStyles}
+        >
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -80,7 +86,7 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </button>
           </div>
           {/*MENU ITEMS */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+          <div className=" ml-[33%] flex flex-col gap-10 text-2xl">
             <Link
               page="Home"
               selectedPage={selectedPage}
