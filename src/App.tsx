@@ -1,6 +1,6 @@
 import NavBar from "@/components/navbar/Navbar";
 import Home from "@/components/Home"
-import Benefits from "@/components/Benefits"
+import Benefits from "@/components/benefits/Benefits"
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 
