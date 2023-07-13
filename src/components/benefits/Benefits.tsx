@@ -48,7 +48,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
         {/*HEADER */}
-        <div className="md:my-5 md:w-3/5">
+        <div className="md:my-5 md:w-3/5 pt-8">
           <TitleText>MORE THAN JUST A GYM.</TitleText>
           <p className="my-5 text-lg">
             Elevate your fitness experience with us. Our exceptional equipment
