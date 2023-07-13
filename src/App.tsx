@@ -3,6 +3,7 @@ import Home from "@/components/Home"
 import Benefits from "@/components/benefits/Benefits"
 import ContactUs from "./components/contactus/ContactUs";
 import OurClasses from "@/components/ourclasses/OurClasses"
+import Footer from "./components/footer/Footer";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 
@@ -37,6 +38,7 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
 
 
 
