@@ -18,7 +18,7 @@ const Home = ({ setSelectedPage }: Props) => {
   return (
     <section
       id={SelectedPage.Home}
-      className="gap-16 bg-gray-20 pt-10 md:h-full"
+      className="gap-16 bg-gray-20 pt-8 md:h-full"
     >
       {/*IMAGE AND MAIN HEADER */}
       <motion.div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
@@ -42,7 +42,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>
-            <p className="mt-8 text-lg">
+            <p className="mt-8 md:text-lg">
               Experience a fitness revolution at our state-of-the-art gym.
               Discover cutting-edge equipment, personalized training programs,
               and a motivating community that will push you to new heights.

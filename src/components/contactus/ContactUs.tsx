@@ -43,7 +43,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <span className="text-primary-500">JOIN NOW </span>
             TO GET IN SHAPE
           </TitleText>
-          <p className="my-5 text-lg">
+          <p className="my-5 md:text-lg">
             Ready to get in shape? Join now and start your fitness journey with
             us. Contact us today to learn more about our membership options and
             take the first step towards a healthier, stronger you.

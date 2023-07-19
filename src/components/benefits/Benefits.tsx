@@ -50,7 +50,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         {/*HEADER */}
         <div className="md:my-5 md:w-3/5 pt-8">
           <TitleText>MORE THAN JUST A GYM.</TitleText>
-          <p className="my-5 text-lg">
+          <p className="my-5 md:text-lg">
             Elevate your fitness experience with us. Our exceptional equipment
             and attentive professionals are dedicated to providing personalized
             care, ensuring every detail is tailored to you. Experience top-notch
@@ -95,7 +95,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.7 }}
+                  transition={{ duration: 0.5 }}
                   variants={{
                     hidden: { opacity: 0, x: 50 },
                     visible: { opacity: 1, x: 0 },
@@ -113,13 +113,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
               variants={{
                 hidden: { opacity: 0, x: 50 },
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <p className="my-5 text-lg">
+              <p className="my-5 md:text-lg">
                 Unlock a world of fitness and join the ranks of millions of
                 delighted members. At our gym, you'll find a haven where your
                 fitness aspirations become a reality. With state-of-the-art
@@ -128,7 +128,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 fitness goals alongside a vibrant community of like-minded
                 individuals.
               </p>
-              <p className="mb-8 text-lg">
+              <p className="mb-8 md:text-lg">
                 Join our thriving community of happy members and witness the
                 transformative power of exercise. From invigorating group
                 classes to cutting-edge training programs, we offer a wide range
